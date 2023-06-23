@@ -37,10 +37,14 @@
 	<br>
 	<br>
 
-	<div class="container">
-		<h1>Registration and Login with Spring Boot, Spring Security,
-			Thymeleaf, Hibernate and MySQL</h1>
-		Welcome <span sec:authentication="principal.username"> User</span>
+<!--	<div class="container">-->
+<!--		<h1>Registration and Login with Spring Boot, Spring Security,-->
+<!--			Thymeleaf, Hibernate and MySQL</h1>-->
+<!--		Welcome <span sec:authentication="principal.username"> User</span>-->
+<!--	</div>-->
+	<div class="container-fluid text-center">
+		<h1>Welcome to Consumers Application</h1>
+		<a class="h2" th:href="@{/users}">Manage Consumers</a>
 	</div>
 </body>
 </html>

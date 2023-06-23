@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Consumers</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+</head>
+<body>
+<!-- create navigation bar ( header) -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+              aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span> <span
+              class="icon-bar"></span> <span class="icon-bar"></span> <span
+              class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" th:href="@{/}"><--BACK</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div><h2>Manage Consumers</h2></div>
+  <div class="m-2">
+    <a class="h3" th:href="@{/users/new}" >Add New Consumer</a>
+  </div>
+  <!--/*@thymesVar id="message" type="string"*/-->
+  <div th:if="${message}" class="alert alert-success text-center">
+    [[${message}]]
+  </div>
+
+  <form th:action="@{/users/getByName}" method="get">
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="text" th:value="${keyWord}"  class="form-control" name="keyWord"  placeholder="Your Key word" />
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div>
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>ID</th>
+          <th>Nama</th>
+          <th>Alamat</th>
+          <th>Kota</th>
+          <th>Provinsi</th>
+          <th>Tgl Pendaftaran</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+      <th:block th:each="user : ${listUsers}">
+        <tr>
+          <td>[[${user.id}]]</td>
+          <td>[[${user.name}]]</td>
+          <td>[[${user.alamat}]]</td>
+          <td>[[${user.kota}]]</td>
+          <td>[[${user.provinsi}]]</td>
+          <td>[[${user.tgl_registrasi}]]</td>
+          <td>
+            <div th:if="${user.enabled == true}">
+              Aktif
+            </div>
+            <div th:if="${user.enabled == false}">
+              Non-Aktif
+            </div>
+<!--            [[${user.enabled}]]-->
+          </td>
+          <td>
+            <a class="h4 mr-3" th:href="@{'/users/edit/' + ${user.id}}">Edit</a>
+            <a class="h4" th:href="@{'/users/delete/' + ${user.id}}">Delete</a>
+          </td>
+        </tr>
+      </th:block>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>
