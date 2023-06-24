@@ -32,11 +32,11 @@ These instructions will guide you on how to get the project up and running on yo
 ```sh
 git clone https://github.com/fadhlillah2/registration-login-spring-boot-security-thymeleaf.git
 ```
-2. Navigate to project directory
+2. Navigate to the project directory
 ```sh
 cd registration-login-spring-boot-security-thymeleaf
 ```
-if you have docker, just run this command after navigate to project directory:
+if you have docker, just run this command after navigating to project directory:
 ```sh
 docker compose up --build
 ```
@@ -78,9 +78,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - your@email.com
+Fadhlillah - fadhlillah949699@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: (https://github.com/fadhlillah2/register-login-dockerization)
 
 ## Acknowledgements
 
