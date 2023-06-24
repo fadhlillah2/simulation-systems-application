@@ -55,7 +55,7 @@ if you have docker, just run this command after navigating to project directory:
 ```sh
 docker compose up --build
 ```
-Open your browser and visit `http://localhost:8080`
+Finally, wait the process till success and open your browser and visit `http://localhost:8080`. But, if you don't have docker, continue the next steps below.
 
 3. Install Maven dependencies
 ```sh
