@@ -24,6 +24,7 @@ These instructions will guide you on how to get the project up and running on yo
 - JDK 1.8
 - Maven
 - MySQL
+- Docker (Recommended)
 
 ### Installation
 
@@ -35,6 +36,12 @@ git clone https://github.com/fadhlillah2/registration-login-spring-boot-security
 ```sh
 cd registration-login-spring-boot-security-thymeleaf
 ```
+if you have docker, just run this command after navigate to project directory:
+```sh
+docker compose up --build
+```
+Open your browser and visit `http://localhost:8080`
+
 3. Install Maven dependencies
 ```sh
 mvn install
