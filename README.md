@@ -14,6 +14,8 @@ The project uses the following main dependencies:
 - Spring Boot Devtools: Provides fast application restarts, LiveReload, and configurations for enhanced development experience.
 - MySQL Connector Java: JDBC Type 4 driver for MySQL.
 - Spring Boot Starter Test: Starter for testing Spring Boot applications with libraries including JUnit, Hamcrest and Mockito.
+- Bootstrap: It is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.
+- Webjars Locator Core: It is used for client-side web libraries packaging into JAR (Java Archive) files.
 
 ## Getting Started
 
