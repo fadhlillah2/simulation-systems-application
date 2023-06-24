@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This is a demo project showcasing a simple registration and login system using Spring Boot, Thymeleaf, and Hibernate. The application uses Spring Security for authentication and authorization, and connects to a MySQL database using Spring Data JPA and Hibernate.
+This is a demo project showcasing a simple registration, login and CRUD mechanism system using Spring Boot, Thymeleaf, and Hibernate. The application uses Spring Security for authentication and authorization and connects to a MySQL database using Spring Data JPA and Hibernate.
 
 The project uses the following main dependencies:
 
@@ -13,12 +13,12 @@ The project uses the following main dependencies:
 - Spring Boot Starter Web: Starter for building web, including RESTful, applications using Spring MVC. Uses Tomcat as the default embedded container.
 - Spring Boot Devtools: Provides fast application restarts, LiveReload, and configurations for enhanced development experience.
 - MySQL Connector Java: JDBC Type 4 driver for MySQL.
-- Spring Boot Starter Test: Starter for testing Spring Boot applications with libraries including JUnit, Hamcrest and Mockito.
+- Spring Boot Starter Test: Starter for testing Spring Boot applications with libraries including JUnit, Hamcrest, and Mockito.
 - Bootstrap: It is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.
 - Webjars Locator Core: It is used for client-side web libraries packaging into JAR (Java Archive) files.
 
 ## About Project 
-  This application is designed to demonstrate a user registration and login system using Spring Boot as the primary framework, Thymeleaf for the front-end templating, and Hibernate for the persistence layer. The data is stored in a MySQL database, and Spring Data JPA is used to simplify database operations.
+  This application is designed to demonstrate a user registration, login, and CRUD mechanism system using Spring Boot as the primary framework, Thymeleaf for the front-end templating, and Hibernate for the persistence layer. The data is stored in a MySQL database, and Spring Data JPA is used to simplify database operations.
 
 Spring Boot is used to create stand-alone, production-grade applications with minimum setup and configurations. Thymeleaf, a modern server-side Java template engine, makes it possible to process HTML files in the application's context and use them to render dynamic content. Hibernate is a popular object-relational mapping tool for Java that simplifies database operations.
 
