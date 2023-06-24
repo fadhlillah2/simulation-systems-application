@@ -17,6 +17,19 @@ The project uses the following main dependencies:
 - Bootstrap: It is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.
 - Webjars Locator Core: It is used for client-side web libraries packaging into JAR (Java Archive) files.
 
+## About Project 
+  This application is designed to demonstrate a user registration and login system using Spring Boot as the primary framework, Thymeleaf for the front-end templating, and Hibernate for the persistence layer. The data is stored in a MySQL database, and Spring Data JPA is used to simplify database operations.
+
+Spring Boot is used to create stand-alone, production-grade applications with minimum setup and configurations. Thymeleaf, a modern server-side Java template engine, makes it possible to process HTML files in the application's context and use them to render dynamic content. Hibernate is a popular object-relational mapping tool for Java that simplifies database operations.
+
+The application uses Spring Security to handle authentication and authorization. It offers form-based login functionality with support for handling user roles. This helps ensure that only authenticated users can access protected resources.
+
+In terms of front-end design, Bootstrap is used to style the web pages. The project uses WebJars, a client-side web libraries packaging system.
+
+For development, Spring Boot DevTools is used for automatic restart and live reload during development. This dependency provides an improved developer experience by providing fast application restarts, LiveReload, and configurations for enhanced development.
+
+Lastly, the project uses the Spring Boot Starter Test dependency for unit testing and integration testing. This includes libraries such as JUnit, Hamcrest, and Mockito. Spring Security Test is used specifically for testing Spring Security.
+
 ## Getting Started
 
 These instructions will guide you on how to get the project up and running on your local machine.
