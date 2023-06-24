@@ -146,7 +146,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 - Fadhlillah - Initial work - [fadhlillah2](https://github.com/fadhlillah2)
 
-See also the list of [contributors](https://github.com/your_username/repo_name/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/fadhlillah2/register-login-dockerization/contributors) who participated in this project.
 
 ## Support
 
