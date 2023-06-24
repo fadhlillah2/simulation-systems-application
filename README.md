@@ -75,7 +75,7 @@ mvn spring-boot:run
 
 ## Usage
 
-After running the application, navigate to the registration page and create a new user. You can then log in with this user to access the home page.
+After running the application, navigate to the registration page, create a new user and you can manage consumer data (CRUD). You can then log in with this user to access the home page.
 
 ## Contributing
 
