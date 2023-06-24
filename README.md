@@ -47,7 +47,7 @@ These instructions will guide you on how to get the project up and running on yo
 ```sh
 git clone https://github.com/fadhlillah2/registration-login-spring-boot-security-thymeleaf.git
 ```
-2. Navigate to the project directory
+2. Navigate to the project directory (Execute your docker if exsists)
 ```sh
 cd registration-login-spring-boot-security-thymeleaf
 ```
