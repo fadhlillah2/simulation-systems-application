@@ -82,3 +82,51 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 * [Spring Security](https://spring.io/projects/spring-security)
 * [Hibernate](https://hibernate.org/)
 * [MySQL](https://www.mysql.com/)
+
+## Running Tests
+
+The application uses Spring Boot's built-in testing capabilities to provide unit and integration tests. You can run the tests by using the following command in the project directory:
+
+```sh
+mvn test
+```
+
+## Deployment
+
+The application can be deployed on any platform that supports Java 8. You need to first package the application into a JAR file, then you can run this JAR file on the deployment platform.
+
+To package the application, use the following command:
+
+```sh
+mvn package
+```
+
+This will create a JAR file in the `target` directory. You can then move this JAR file to the deployment platform and run it using the following command:
+
+```sh
+java -jar target/registration-login-spring-boot-security-thymeleaf-0.0.1-SNAPSHOT.jar
+```
+
+## Built With
+
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [Thymeleaf](https://www.thymeleaf.org/)
+- [Spring Security](https://spring.io/projects/spring-security)
+- [Hibernate](https://hibernate.org/)
+- [Maven](https://maven.apache.org/)
+- [Java 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your_username/repo_name/tags).
+
+## Authors
+
+- Your Name - Initial work - [YourUsername](https://github.com/your_username)
+
+See also the list of [contributors](https://github.com/your_username/repo_name/contributors) who participated in this project.
+
+## Support
+
+If you encounter any issues or require further assistance, you can create an issue in the repository. Make sure to describe the issue and include any relevant details like error messages or screenshots to help understand the problem better.
+
