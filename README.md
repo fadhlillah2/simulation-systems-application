@@ -29,7 +29,7 @@ These instructions will guide you on how to get the project up and running on yo
 
 1. Clone the repo
 ```sh
-git clone https://github.com/<your-github-username>/registration-login-spring-boot-security-thymeleaf.git
+git clone https://github.com/fadhlillah2/registration-login-spring-boot-security-thymeleaf.git
 ```
 2. Navigate to project directory
 ```sh
