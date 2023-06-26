@@ -2,11 +2,11 @@
 
 ## Project Description
 
-This is a demo project showcasing a simple registration, login and CRUD mechanism system using Spring Boot, Thymeleaf, and Hibernate. The application uses Spring Security for authentication and authorization and connects to a MySQL database using Spring Data JPA and Hibernate.
+This is a simulation project showcasing a simple registration, login, and CRUD mechanism system using Spring Boot, Session Management, Thymeleaf, and Hibernate. The application uses Spring Security for authentication and authorization and connects to a MySQL database using Spring Data JPA and Hibernate.
 
 The project uses the following main dependencies:
 
-- Spring Boot Starter Data JPA: Provides Spring Data JPA, Hibernate, JPA API, JPA Implementation (default is Hibernate), JDBC and other needed libraries.
+- Spring Boot Starter Data JPA: Provides Spring Data JPA, Hibernate, JPA API, JPA Implementation (default is Hibernate), JDBC, and other needed libraries.
 - Spring Boot Starter Security: It is a powerful and customizable authentication and access-control framework. It is the de-facto standard for securing Spring-based applications.
 - Spring Boot Starter Thymeleaf: It is a modern server-side Java template engine for both web and standalone environments. Thymeleaf's main goal is to bring elegant natural templates to your development workflow.
 - Thymeleaf Extras Springsecurity5: A Thymeleaf integration package for Spring Security 5.
