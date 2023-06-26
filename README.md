@@ -1,4 +1,4 @@
-# Registration-Login-Spring-Boot-Security-Thymeleaf
+# Simulation Systems Application
 
 ## Project Description
 
