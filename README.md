@@ -21,7 +21,7 @@ The project uses the following main dependencies:
 - Spring Session JDBC: This module provides JDBC (Java Database Connectivity) support for Spring Session, allowing sessions to be stored and retrieved from a relational database.
 
 ## About Project 
-  This application is designed to demonstrate a user registration, login, and CRUD mechanism system using Spring Boot as the primary framework, Thymeleaf for the front-end templating, and Hibernate for the persistence layer. The data is stored in a MySQL database, and Spring Data JPA is used to simplify database operations.
+  This application is designed to demonstrate a user registration, login, and CRUD mechanism system using Spring Boot as the primary framework, Spring Session and JDBC to manage user sessions in a database, Thymeleaf for the front-end templating, and Hibernate for the persistence layer. The data is stored in a MySQL database, and Spring Data JPA is used to simplify database operations.
 
 Spring Boot is used to create stand-alone, production-grade applications with minimum setup and configurations. Thymeleaf, a modern server-side Java template engine, makes it possible to process HTML files in the application's context and use them to render dynamic content. Hibernate is a popular object-relational mapping tool for Java that simplifies database operations.
 
