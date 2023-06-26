@@ -16,6 +16,9 @@ The project uses the following main dependencies:
 - Spring Boot Starter Test: Starter for testing Spring Boot applications with libraries including JUnit, Hamcrest, and Mockito.
 - Bootstrap: It is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.
 - Webjars Locator Core: It is used for client-side web libraries packaging into JAR (Java Archive) files.
+- Spring Boot Starter JDBC: This starter provides the necessary dependencies for using JDBC with Spring Boot.
+- Spring Session Core: The core module for Spring Session, which allows explicit session management in your Spring application.
+- Spring Session JDBC: This module provides JDBC (Java Database Connectivity) support for Spring Session, allowing sessions to be stored and retrieved from a relational database.
 
 ## About Project 
   This application is designed to demonstrate a user registration, login, and CRUD mechanism system using Spring Boot as the primary framework, Thymeleaf for the front-end templating, and Hibernate for the persistence layer. The data is stored in a MySQL database, and Spring Data JPA is used to simplify database operations.
@@ -38,7 +41,7 @@ These instructions will guide you on how to get the project up and running on yo
 
 - JDK 1.8
 - Maven
-- MySQL
+- A running relational database compatible with JDBC (e.g., MySQL, PostgreSQL, Oracle)
 - Docker (Recommended)
 
 ### Installation
@@ -75,7 +78,7 @@ mvn spring-boot:run
 
 ## Usage
 
-After running the application, navigate to the registration page, create a new user and you can manage consumer data (CRUD). You can then log in with this user to access the home page.
+After running the application, navigate to the registration page, create a new user and you can manage consumer data (CRUD). You can then log in with this user to access the home page. You can also interact with it via HTTP requests. The session data will be persisted in the database through Spring Session using JDBC.
 
 ## Contributing
 
