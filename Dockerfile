@@ -9,5 +9,5 @@ RUN mvn package -DskipTests
 # Stage 2: Run
 FROM openjdk:8-jre-slim
 COPY --from=build /home/app/target/*.jar /usr/local/lib/app.jar
-EXPOSE 8080
+EXPOSE 8081
 ENTRYPOINT ["java","-jar","/usr/local/lib/app.jar"]

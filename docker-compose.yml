@@ -5,13 +5,24 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8081:8081"
     depends_on:
       - db
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/demo?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=12345678
+#      - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT= org.hibernate.dialect.MySQL5InnoDBDialect
+      - SPRING_JPA_HIBERNATE_DDL_AUTO= update
+      - LOGGING_LEVEL_ORG_HIBERNATE_SQL= DEBUG
+      - LOGGING_LEVEL_ORG_HIBERNATE_TYPE= TRACE
+#      - SPRING_DATASOURCE_DRIVER_CLASS_NAME= com.mysql.cj.jdbc.Driver
+#      - SPRING_DATASOURCE_TYPE= com.zaxxer.hikari.HikariDataSource
+      - SPRING_SESSION_STORE_TYPE= jdbc
+      - SPRING_SESSION_JDBC_INITIALIZE_SCHEMA= always
+      - SPRING_SESSION_TIMEOUT_SECONDS= 30
+      - SPRING_H2_CONSOLE_ENABLED= true
+      - SERVER_PORT= 8081
 
   db:
     image: mysql:latest
