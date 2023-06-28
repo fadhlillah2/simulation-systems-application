@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This is a simulation project showcasing a simple registration, login, and CRUD mechanism system using Spring Boot, Session Management, Thymeleaf, and Hibernate. The application uses Spring Security for authentication and authorization and connects to a MySQL database using Spring Data JPA and Hibernate.
+This is a simulation project showcasing a simple registration, login, CRUD mechanism system, PayPal Payment Integration, Session Management, Thymeleaf, and Hibernate. The application uses Spring Security for authentication and authorization and connects to a MySQL database using Spring Data JPA and Hibernate.
 
 The project uses the following main dependencies:
 
@@ -19,9 +19,10 @@ The project uses the following main dependencies:
 - Spring Boot Starter JDBC: This starter provides the necessary dependencies for using JDBC with Spring Boot.
 - Spring Session Core: The core module for Spring Session, which allows explicit session management in your Spring application.
 - Spring Session JDBC: This module provides JDBC (Java Database Connectivity) support for Spring Session, allowing sessions to be stored and retrieved from a relational database.
+- rest-api-sdk: This is necessary to interact with PayPal's APIs in the project.
 
 ## About Project 
-  This application is designed to demonstrate a user registration, login, and CRUD mechanism system using Spring Boot as the primary framework, Spring Session and JDBC to manage user sessions in a database, Thymeleaf for the front-end templating, and Hibernate for the persistence layer. The data is stored in a MySQL database, and Spring Data JPA is used to simplify database operations.
+  This application is designed to demonstrate a user registration, login, CRUD mechanism system using Spring Boot as the primary framework, PayPal Payment Integration to handle (transactions, process payments, and handle refunds among other functionalities), Spring Session and JDBC to manage user sessions in a database, Thymeleaf for the front-end templating, and Hibernate for the persistence layer. The data is stored in a MySQL database, and Spring Data JPA is used to simplify database operations.
 
 Spring Boot is used to create stand-alone, production-grade applications with minimum setup and configurations. Thymeleaf, a modern server-side Java template engine, makes it possible to process HTML files in the application's context and use them to render dynamic content. Hibernate is a popular object-relational mapping tool for Java that simplifies database operations.
 
