@@ -19,7 +19,7 @@ The project uses the following main dependencies:
 - Spring Boot Starter JDBC: This starter provides the necessary dependencies for using JDBC with Spring Boot.
 - Spring Session Core: The core module for Spring Session, which allows explicit session management in your Spring application.
 - Spring Session JDBC: This module provides JDBC (Java Database Connectivity) support for Spring Session, allowing sessions to be stored and retrieved from a relational database.
-- rest-api-sdk: This is necessary to interact with PayPal's APIs in the project.
+- Rest Api Sdk: This is necessary to interact with PayPal's APIs in the project.
 
 ## About Project 
   This application is designed to demonstrate a user registration, login, CRUD mechanism system using Spring Boot as the primary framework, PayPal Payment Integration to handle (transactions, process payments, and handle refunds among other functionalities), Spring Session and JDBC to manage user sessions in a database, Thymeleaf for the front-end templating, and Hibernate for the persistence layer. The data is stored in a MySQL database, and Spring Data JPA is used to simplify database operations.
@@ -51,15 +51,15 @@ These instructions will guide you on how to get the project up and running on yo
 ```sh
 git clone https://github.com/fadhlillah2/registration-login-spring-boot-security-thymeleaf.git
 ```
-2. Navigate to the project directory (Execute your docker if exsists)
+2. Navigate to the project directory (Execute your docker if exists)
 ```sh
 cd registration-login-spring-boot-security-thymeleaf
 ```
-if you have docker, just run this command after navigating to project directory:
+if you have docker, just run this command after navigating to the project directory:
 ```sh
 docker compose up --build
 ```
-Finally, wait the process till success and open your browser and visit `http://localhost:8080`. But, if you don't have docker, continue the next steps below.
+Finally, wait for the process till success and open your browser and visit `http://localhost:8080`. But, if you don't have docker, continue the next steps below.
 
 3. Install Maven dependencies
 ```sh
@@ -83,7 +83,7 @@ After running the application, navigate to the registration page, create a new u
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
