@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Notification Page</title>
+</head>
+<body>
+<h1>Notifications</h1>
+<ul id="notificationList">
+	<!-- Loop over all notifications and display them -->
+	<li th:each="notification : ${notifications}" th:text="${notification}"></li>
+</ul>
+
+<!-- Add SockJS and STOMP JavaScript libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.1/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+
+<!-- Custom script to handle WebSocket updates -->
+<script th:inline="javascript">
+	var socket = new SockJS('/gs-guide-websocket'); // the WebSocket endpoint
+	var stompClient = Stomp.over(socket);
+
+	stompClient.connect({}, function(frame) {
+		stompClient.subscribe('/topic/notification', function(notification) {
+			// Parse the incoming message
+			var message = JSON.parse(notification.body);
+			showMessage(message.title, message.message);
+
+			// Append it to the list
+			var li = document.createElement('li');
+			li.textContent = message; // you might need to adjust this depending on the structure of your Notification
+			document.getElementById('notificationList').appendChild(li);
+		});
+	});
+</script>
+</body>
+</html>
